@@ -45,7 +45,7 @@
             color: blue;
         }
         .contact-link:active {
-            color: red;
+            color: blue;
         }
         .content {
             padding: 50px 20px;
@@ -82,23 +82,23 @@
 <body>
     <div class="container">
         <header>
-            <img src="download3.jpg" alt="Logo">
+            <img src="image4.jpg" alt="Logo">
             <nav>
-                <a href="index.html">SITENAME</a>
-                <a href="contact.html" class="contact-link">CONTACT</a>
+                <a href="weekendassignment.html">SITENAME</a>
+                <a href="contactus.html" class="contact-link">CONTACT</a>
             </nav>
         </header>
         
         <div class="content">
-            <p>SUGGEST YOUR FAV</p>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
+            <p><h1>SUGGEST YOUR FAV</h1></p>
+            <form action="javascript:submitform()" onsubmit="return validate()">
+                <label for="name"><h2>NAME:</h2></label>
                 <input type="text" id="name" name="name" required>
                 
-                <label for="email">Email:</label>
+                <label for="email"><h2>Email:</h2></label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="genre">Favourite Genre:</label>
+                <label for="genre"><h2>Favourite Genre:</h2></label>
                 <input type="text" id="genre" name="genre" list="genres" required>
                 <datalist id="genres">
                     <option value="Science Fiction">
@@ -107,12 +107,24 @@
                     <option value="Horror">
                 </datalist>
                 
-                <label for="subscribe">Subscribe:</label>
+                <label for="subscribe"><h2>Subscribe:</h2></label>
                 <input type="checkbox" id="subscribe" name="subscribe">
-                
-                <button type="submit">SUBMIT</button>
+                <input type="submit"name="submit"value="submit">
             </form>
+            <script>
+                function validate(){
+            return true;
+        }
+        function submitform(){
+            window.alert("form submitted")
+        }
+            </script>
         </div>
+        <head>
+            <body background="image5.jpg">
+
+            </body>
+        </head>
         
         <footer>
             <p>ALL RIGHTS RESERVED</p>
